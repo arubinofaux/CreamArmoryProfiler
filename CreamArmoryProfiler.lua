@@ -89,4 +89,4 @@ end
 
 
 
-print("|cffff0000Cream Armory v1.0.0|r Type '/cr scan' to enable scanning and help us scan other players!");
+print("|cffff0000Cream Armory v1.0.4|r Type '/cr scan' to enable scanning and help us scan other players!");

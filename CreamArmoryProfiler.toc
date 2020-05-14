@@ -1,6 +1,6 @@
 ﻿## Interface: 11303
-## Title: |cFFFFFFFFCream Armory Profiler|r|cFF00FF00 v1.0.0|r
-## Author: Rasmus Søborg / acidtib
+## Title: |cFFFFFFFFCream Armory Profiler|r|cFF00FF00 v1.1.0|r
+## Author: Rasmus Søborg
 ## Notes: Armory Profiler for creamarmory.com
 ## Version: 1.1.0
 ## OptionalDeps: LibWho-2.0, LibStub, CallbackHandler-1.0, LibChecksum-1.0, Ace3, LibDataBroker-1.1, LibItemUpgradeInfo-1.0, LibGroupInSpecT-1.1, LibCompress

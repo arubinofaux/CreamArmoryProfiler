@@ -44,7 +44,7 @@ end);
 -----------------------------------------------
 -- Slash Commands
 -----------------------------------------------
-SLASH_CRPROFILE1 = "/cr";
+SLASH_CRPROFILE1 = "/crp";
 
 SlashCmdList["CRPROFILE"] = function(params)
 	local arg1, arg2 = strsplit(" ", params);
@@ -89,4 +89,4 @@ end
 
 
 
-print("|cffff0000Cream Armory v1.0.4|r Type '/cr scan' to enable scanning and help us scan other players!");
+print("|cffff0000Cream Armory v1.0.4|r Type '/crp scan' to enable scanning and help us scan other players!");

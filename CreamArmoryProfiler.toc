@@ -1,0 +1,27 @@
+﻿## Interface: 11303
+## Title: |cFFFFFFFFCream Armory Profiler|r|cFF00FF00 v1.0.0|r
+## Author: Rasmus Søborg / acidtib
+## Notes: Armory Profiler for creamarmory.com
+## Version: 1.1.0
+## OptionalDeps: LibWho-2.0, LibStub, CallbackHandler-1.0, LibChecksum-1.0, Ace3, LibDataBroker-1.1, LibItemUpgradeInfo-1.0, LibGroupInSpecT-1.1, LibCompress
+## SavedVariables: CreamArmoryProfilerPrefs, aldb, scanningEnabled
+
+#@no-lib-strip@
+libs\libs.xml
+libs\LibStub\LibStub.lua
+libs\LibChecksum-1.0\LibChecksum.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibWho-2.0\LibWho-2.0.lua
+libs\LibRealmID\LibRealmID.lua
+#@end-no-lib-strip@
+
+Database.lua
+Base64Enc.lua
+Ulong.lua
+Aeslua.lua
+Logging.lua
+Security.lua
+Detail.lua
+Scanner.lua
+
+CreamArmoryProfiler.lua

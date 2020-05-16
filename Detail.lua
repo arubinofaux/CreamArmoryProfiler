@@ -131,7 +131,7 @@ function GetPlayerInfo(unitId)
 		local numTalents = GetNumTalents(t);
 		for i=1, numTalents do
 			name, iconPath, tier, column, currentRank, maxRank, isExceptional, meetsPrereq = GetTalentInfo(t,i);
-			local talent_entry = string.format("%s;%s;%d;%d;%d;%d-", name, iconPath, tier, column, currentRank, maxRank);
+			local talent_entry = string.format("%s;%s;%d;%d;%d;%d--", name, iconPath, tier, column, currentRank, maxRank);
 			talent_info = string.format("%s%s", talent_info, talent_entry);
 		end	
 		talent_info = string.format("%s]", talent_info);

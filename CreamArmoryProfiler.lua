@@ -2,6 +2,7 @@
 -- Namespaces
 -----------------------------------------------
 local _, core = ...;
+local Db = core.db;
 
 -----------------------------------------------
 -- Frames
@@ -71,6 +72,7 @@ SlashCmdList["CRPROFILE"] = function(params)
 			scanningEnabled = false;
 		else
 			print("|cffff0000Cream Armory|r Scanning has been enabled. You will now automatically scan players you interact with. Thank you for contributing!");
+			Db:Clear()
 			scanningEnabled = true;
 		end
 	else

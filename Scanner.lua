@@ -43,6 +43,7 @@ function ScanTarget(self,unitId)
 			local targetInventory = "";
 			local scanType = "SEMI";
 			local pvpTitle = UnitPVPName(unitId);
+			local gender = UnitSex(unitId)-1;
 			
 			createDetailsRequestForTalents( targetName );
 			
@@ -82,9 +83,9 @@ function ScanTarget(self,unitId)
 
 			logprint(format("Scanned |cffff0000%s|r [%s]", targetName, scanType));
 			
-			local entry = format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s", date(), 
+			local entry = format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s", date(), 
 				targetName, targetLevel, targetHealth, targetRace,
-				targetClass, targetGuild, targetGuildRank, targetInventory, playerGuid, pvpTitle);
+				targetClass, targetGuild, targetGuildRank, targetInventory, playerGuid, pvpTitle, gender);
 			
 			local obfuscated_scan_head = obfuscator:body(15, format("%s-%s-%s", targetName, GetRealmName(), scanType));
 			local obfuscated_scan_body = obfuscator:body(15, entry);

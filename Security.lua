@@ -35,14 +35,16 @@ function obfuscator:header( _timestamp )
 	local sta_base, _, _, _ = UnitStat("player", 3);
 	local int_base, _, _, _ = UnitStat("player", 4);
 	local spi_base, _, _, _ = UnitStat("player", 5);
+	local armor_base = UnitArmor("player")
 	
-	local base_total = str_base+agi_base+sta_base+int_base+spi_base;
-	local stat_grid = string.format("%d;%d;%d;%d;%d;", 
+	local base_total = str_base+agi_base+sta_base+int_base+spi_base+armor_base;
+	local stat_grid = string.format("%d;%d;%d;%d;%d;%d;", 
 		str_base, 
 		agi_base, 
 		sta_base, 
 		int_base, 
-		spi_base
+		spi_base,
+		armor_base
 	);
 	
 	-- unit name, realm & level
